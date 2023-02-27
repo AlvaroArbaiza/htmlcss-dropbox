@@ -24,7 +24,7 @@ section {
     background-color: aqua;
 }
 
-/* jumbotron section */
+/* SECTION - jumbotron */
 main section#jumbotron {
     width: 100%;
     background-color: rgb(180, 208, 231);
@@ -52,6 +52,47 @@ main section div img {
     width: 70%;
 }
 
+/* SECTION - piano business */
+/* radio buttons */
+section div label.container-radio-button {
+    padding-left: 35px;
+    cursor: pointer;
+    user-select: none;
+}
+section div label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+section div label span.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    background-color: white;
+}
+.container-radio-button span.checkmark:hover {
+    background-color: #ccc;
+}
+.container-radio-button input:checked ~ .checkmark {
+    border: 5px solid #2196F3;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container-radio-button input:checked ~ .checkmark:after {
+    display: block;
+}
+/* piani pagamento */
+main section div .piani-pagamento {
+  width: calc((100% / 3) - 20px);
+  height: 600px;
+}
 
 /* FOOTER */
 footer {

@@ -10,7 +10,7 @@
 /* Centratura Pagina */
 .center {
     width: 60%;
-    margin: 0 auto;
+    margin: 120px auto;
 }
 
 /* Flexbox */
@@ -70,4 +70,7 @@ img {
 /* Font */
 .font-14 {
     font-size: 14px;
+}
+.font-37 {
+    font-size: 37px;
 }
