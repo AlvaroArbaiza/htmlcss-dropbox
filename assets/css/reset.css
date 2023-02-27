@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    border: 1px dotted black;
 }
 
 /* Centratura Pagina */
@@ -14,6 +15,15 @@
 
 .flex {
     display: flex;
+}
+.align-i-center {
+    align-items: center;
+}
+.justify-c-center {
+    justify-content: center;
+}
+.justify-c-space-between {
+    justify-content: space-between;
 }
 
 li {
