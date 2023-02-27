@@ -25,6 +25,9 @@
 .justify-c-space-between {
     justify-content: space-between;
 }
+.gap-20 {
+    gap: 20px;
+}
 
 li {
     list-style: none;
@@ -37,4 +40,14 @@ li {
 
 .absolute {
     position: absolute;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button-bg-blue {
+    background-color: rgb(0, 97, 255);
+    border: none;
+    color: white;
 }

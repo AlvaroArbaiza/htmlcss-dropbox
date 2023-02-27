@@ -1,23 +1,26 @@
+/* HEADER */
 header {
     width: 100%;
-    height: 100px;
-    background-color: lightgrey;
+    height: 70px;
     padding: 0 10px;
+    font-size: 14px;
+}
+header div a {
+    color: rgb(66, 66, 66);
+}
+header div #inizia-button {
+    padding: 7px 14px;
 }
 
-nav {
-    width: 200px;
-    height: 30px;
-    background-color: grey;
-}
 
-img {
+/* MAIN */
+main img {
     width: 200px;
     height: 30px;
     background-color: cornflowerblue;
 }
 
-a {
+main a {
     width: 200px;
     height: 30px;
     background-color: lightsalmon;
