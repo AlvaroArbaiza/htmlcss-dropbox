@@ -9,12 +9,16 @@
 
 /* Centratura Pagina */
 .center {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 
+/* Flexbox */
 .flex {
     display: flex;
+}
+.flex-d-column {
+    flex-direction: column;
 }
 .align-i-center {
     align-items: center;
@@ -28,26 +32,42 @@
 .gap-20 {
     gap: 20px;
 }
+.gap-30 {
+    gap: 30px;
+}
 
+/* Lista */
 li {
     list-style: none;
     display: inline-block;
 }
 
+/* Position */
 .relative {
     position: relative;
 }
-
 .absolute {
     position: absolute;
 }
 
+/* Link */
 a {
     text-decoration: none;
 }
 
+/* Buttons */
 .button-bg-blue {
     background-color: rgb(0, 97, 255);
     border: none;
     color: white;
+}
+
+/* Immagini */
+img {
+    max-width: 100%;
+}
+
+/* Font */
+.font-14 {
+    font-size: 14px;
 }
