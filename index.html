@@ -12,10 +12,10 @@
 </head>
 <body>
     <!-- header -->
-    <header class="flex justify-c-center align-i-center justify-c-space-between font-14">
+    <header class="flex justify-c-center align-i-center justify-c-space-between font-13">
         
         <!-- sx -->
-        <div class="container-header flex justify-c-center align-i-center justify-c-space-between gap-20">
+        <div class="container-header flex al-jus-center justify-c-space-between gap-20">
             <!-- logo -->
             <img src="./assets/img/logo-small.png" alt="dropbox logo">
             <!-- navbar sx -->
@@ -35,7 +35,7 @@
         </div>
 
         <!-- dx -->
-        <div class="container-header flex justify-c-center align-i-center justify-c-space-between gap-20">
+        <div class="container-header flex al-jus-center justify-c-space-between gap-20">
             <!-- navbar dx -->
             <nav>
                 <ul class="flex justify-c-space-between gap-20">
@@ -57,38 +57,44 @@
     
     <!-- main -->
     <main>
+
         <!-- jumbotron -->
-        <section id="jumbotron" class="font-14">
-            <!-- h1 -->
-            <h1 class="jumb-center">
-                Tutto ci&#242; che ti serve per il lavoro, in un unico posto
-            </h1>
-            <!-- testo e img -->
-            <div class="flex jumb-center">
-                <div id="jumbo-text" class="flex flex-d-column gap-30">
-                    <p>
-                        Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business &#232; pi&#249; di uno spazio di archiviazione sicuro: &#232; un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
-                    </p>
-                    <!-- button -->
-                    <a class="font-14" href="#">
-                        <span class="button-bg-blue">
-                            Inizia la tua prova gratuita
-                        </span>
-                    </a>
-                    <span>Annulla in qualsiasi momento</span>
-                    <!-- anchor icon -->
-                    <a id="arrow-down" href="#">
-                        <i class="fa-solid fa-arrow-down"></i>
-                    </a>
+        <section id="jumbotron" class="font-13">
+            <div class="relative">
+                <!-- h1 -->
+                <h1 class="jumb-center">
+                    Tutto ci&#242; che ti serve per il lavoro, in un unico posto
+                </h1>
+                <!-- testo e img -->
+                <div class="flex jumb-center">
+                    <div id="col-30" class="flex flex-d-column gap-30">
+                        <p>
+                            Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business &#232; pi&#249; di uno spazio di archiviazione sicuro: &#232; un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
+                        </p>
+                        <!-- button -->
+                        <a class="font-13" href="#">
+                            <span class="button-bg-blue">
+                                Inizia la tua prova gratuita
+                            </span>
+                        </a>
+                        <span>Annulla in qualsiasi momento</span>
+                        <!-- anchor icon -->
+                        <a id="arrow-down" href="#">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                    </div>
+                    <div id="col-70">
+                        <img src="./assets/img/jumbo.png" alt="immagine webapp dropbox">
+                    </div>
                 </div>
-                <img src="./assets/img/jumbo.png" alt="immagine webapp dropbox">
             </div>
         </section>
+
         <!-- piano business -->
-        <section class="center flex flex-d-column gap-30">
+        <section class="center flex flex-d-column gap-40">
             <h2 class="font-37">Trova il piano business che fa per te</h2>
             <!-- radio buttons -->
-            <div class="flex gap-30 font-14">
+            <div class="flex gap-30 font-13">
                 <label class="relative container-radio-button">
                     Fatturazione mensile
                     <input type="radio" checked="checked" name="piano_pagamento">
@@ -100,13 +106,221 @@
                     <span class="checkmark"></span>
                   </label>
             </div>
-            <div class="flex justify-c-space-between">
-                <div class="piani-pagamento"></div>
-                <div class="piani-pagamento"></div>
-                <div class="piani-pagamento"></div>
+
+            <!-- piani pagamento -->
+            <!-- professional -->
+            <div class="flex justify-c-space-between font-13">
+                <div class="piani-pagamento">
+                    <!-- head -->
+                    <div class="flex al-jus-center">
+                        <span class="user-icon"> Singolo</span>
+                    </div>
+                    <!-- body -->
+                    <div class="container-info flex flex-d-column gap-30">
+                        <div class="flex flex-d-column gap-10">
+                            <h3>Professional</h3>
+                            <strong>&#8364; 12.00</strong>
+                            <span class="c-grey">&#47;mese</span>
+                        </div>
+                        <!-- descrizione piano -->
+                        <ul class="flex flex-d-column gap-10">
+                            <li class="user-icon">
+                                <span class="inline-block w-90">
+                                    1 utente
+                                </span>
+                            </li>
+                            <li class="folder-icon">
+                                <span class="inline-block w-90">
+                                    5 TB di spazio di archiviazione sicuro
+                                </span>
+                            </li>
+                            <li class="share-icon">
+                                <span class="inline-block w-90">
+                                    Funzioni di produttivit&#224; premium e condivisione file semplice e sicura
+                                </span>
+                            </li>
+                        </ul>
+                        <!-- cta - prova gratuita -->
+                        <a href="#" class="button-bg-blue button-rectangular">Prova gratis per 30 giorni</a>
+                        <!-- cta - acquista ora -->
+                        <div>
+                            <span>oppure</span>
+                            <a href="#" class="link">acquista ora</a>
+                        </div>
+                        
+                        <hr>
+                        <!-- punti salienti -->
+                        <div class="flex flex-d-column gap-20">
+                            <h4>Punti Salienti del piano</h4>
+                            <ul class="flex flex-d-column gap-20">
+                                <li class="check-icon">
+                                    <span class="inline-block w-90">
+                                        Invia file fino a 100 GB con Dropbox Transfert 
+                                    </span>
+                                </li>
+                                <li class="check-icon">
+                                    <span class="inline-block w-90">
+                                        Cartelle offline su dispositivi mobili
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- advance -->
+                <div class="piani-pagamento">
+                    <!-- head -->
+                    <div class="flex al-jus-center">
+                        <span class="users-icon"> Team</span>
+                    </div>
+                    <!-- body -->
+                    <div class="container-info flex flex-d-column gap-30">
+                        <div class="flex flex-d-column gap-10">
+                            <h3>Advanced</h3>
+                            <strong>&#8364; 18.00</strong>
+                            <span class="c-grey">&#47;utente&#47;mese</span>
+                        </div>
+                        <!-- descrizione piano -->
+                        <ul class="flex flex-d-column gap-10">
+                            <li class="users-icon">
+                                <span class="inline-block w-90">
+                                    3 o pi&#249; utenti
+                                </span>
+                            </li>
+                            <li class="folder-icon">
+                                <span class="inline-block w-90">
+                                    Tutto lo spazio di cui ha bisogno il tuo team
+                                </span>
+                            </li>
+                            <li class="share-icon">
+                                <span class="inline-block w-90">
+                                    Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team
+                                </span>
+                            </li>
+                        </ul>
+                        <!-- cta - prova gratuita -->
+                        <a href="#" class="button-bg-blue button-rectangular">Prova gratis per 30 giorni</a>
+                        <!-- cta - acquista ora -->
+                        <div>
+                            <span>oppure</span>
+                            <a href="#" class="link">acquista ora</a>
+                        </div>
+                        <hr>
+
+                        <!-- punti salienti -->
+                        <div class="flex flex-d-column gap-20">
+                            <h4>Punti Salienti del piano</h4>
+                            <ul class="flex flex-d-column gap-20">
+                                <li class="check-icon">
+                                    <span class="inline-block w-90">
+                                        Nessun limite di spazio per i file 
+                                    </span>
+                                </li>
+                                <li class="check-icon">
+                                    <span class="inline-block w-90">
+                                        Cartelle offline su dispositivi mobili
+                                    </span>
+                                </li>
+                                <li class="check-icon">
+                                    <span class="inline-block w-90">
+                                        Risparmio del 50&#37; rispetto alle iscrizioni aperte
+                                    </span>
+                                </li>
+                                <li class="check-icon">
+                                    <span class="inline-block w-90">
+                                        Possibilit&#224; di inserire nuovi membri del team
+                                    </span>
+                                </li>
+                                <li class="check-icon">
+                                    <span class="inline-block w-90">
+                                        Gestione dei permessi in base ai ruoli
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- enterprise -->
+                <div class="piani-pagamento">
+                    <!-- head -->
+                    <div class="flex al-jus-center">
+                        <span class="flad-icon"> Azienda</span>
+                    </div>
+                    <!-- body -->
+                    <div class="container-info flex flex-d-column gap-30">
+                        <div class="flex flex-d-column gap-10">
+                            <h3>Enterprise</h3>
+                            <strong>Contattaci</strong>
+                            <span class="c-grey">&#45;</span>
+                        </div>
+                        <!-- descrizione piano -->
+                        <ul class="flex flex-d-column gap-10">
+                            <li class="user-icon">
+                                <span class="inline-block w-90">
+                                    10 o pi&#249; utenti
+                                </span>
+                            </li>
+                            <li class="folder-icon">
+                                <span class="inline-block w-90">
+                                    Soluzioni personalizzabili per la tua azienda
+                                </span>
+                            </li>
+                            <li class="share-icon">
+                                <span class="inline-block w-90">
+                                    Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala
+                                </span>
+                            </li>
+                        </ul>
+                        <!-- cta - prova gratuita -->
+                        <a href="#" class="button-bg-blue button-rectangular">Contattaci</a>
+                        <!-- cta - acquista ora -->
+                        <div>
+                            <span>oppure</span>
+                            <a href="#" class="link">acquista ora</a>
+                        </div>
+                        <hr>
+
+                        <!-- punti salienti -->
+                        <div class="flex flex-d-column gap-20">
+                            <h4>Punti Salienti del piano</h4>
+                            <ul class="flex flex-d-column gap-20">
+                                <li class="check-icon">
+                                    <span class="inline-block w-90">
+                                        Cartelle offline su dispositivi mobili 
+                                    </span>
+                                </li>
+                                <li class="check-icon">
+                                    <span class="inline-block w-90">
+                                        Servizio assistenza 24&#47;h
+                                    </span>
+                                </li>
+                                <li class="check-icon">
+                                    <span class="inline-block w-90">
+                                        Possibilit&#224; di personalizzazione totale
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-            <div></div>
+            <!-- piano enterprise -->
+            <div>
+                <span></span>
+                <div>
+                    <h3></h3>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- cta - contattaci -->
+                <a href=""></a>
+            </div>
         </section>
+
         <!-- entra in contatto -->
         <section class="center">
             <img src="" alt="">

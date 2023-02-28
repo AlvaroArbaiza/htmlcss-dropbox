@@ -1,108 +1,192 @@
 /* HEADER */
 header {
-    width: 100%;
-    height: 70px;
-    padding: 0 10px;
+  width: 100%;
+  height: 70px;
+  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: white;
 }
 header div a {
-    color: rgb(66, 66, 66);
+  color: rgb(66, 66, 66);
 }
 header div #inizia-button {
-    padding: 7px 14px;
+  padding: 7px 14px;
+}
+header div nav > ul {
+  height: 70px;
+}
+header div nav ul li {
+  display: flex;
+  align-items: center;
+}
+header div nav ul li:hover{
+  border-bottom: 1px solid black;
 }
 header, p {
-    line-height: 20px;
+  line-height: 20px;
 }
 
 /* MAIN */
 main {
-    width: 100%;
-    background-color: aquamarine;
+  width: 100%;
+  background-color: aquamarine;
 }
 section {
-    height: 600px;
-    background-color: aqua;
+  height: 1000px;
+  background-color: white;
 }
 
 /* SECTION - jumbotron */
 main section#jumbotron {
-    width: 100%;
-    background-color: rgb(180, 208, 231);
+  width: 100%;
+  height: 700px;
+  background-color: rgb(180, 208, 231);
 }
-main #jumbotron .jumb-center {
-    width: 70%;
-    margin: 40px auto 0;
+main section > div.relative {
+  bottom: -100px;
 }
-main #jumbotron h1.jumb-center {
-    font-size: 60px;
-    font-weight: 1000;
+main #jumbotron div .jumb-center {
+  width: 70%;
+  margin: 40px auto 0;
 }
-main section div#jumbo-text {
-    width: 30%;
+main #jumbotron div h1.jumb-center {
+  font-size: 60px;
+  font-weight: 1000;
 }
-main section div#jumbo-text a span.button-bg-blue {
-    padding: 7px 14px;
+main section div#col-30 {
+  flex-basis: 30%;
 }
-main section div#jumbo-text a#arrow-down {
-    margin-top: 40px;
-    font-size: 40px;
-    color: black;
+main section div#col-70 {
+  flex-basis: 70%;
 }
-main section div img {
-    width: 70%;
+main section div#col-30 a span.button-bg-blue {
+  padding: 7px 14px;
+}
+main section div#col-30 a#arrow-down {
+  margin-top: 40px;
+  font-size: 40px;
+  color: black;
 }
 
 /* SECTION - piano business */
 /* radio buttons */
 section div label.container-radio-button {
-    padding-left: 35px;
-    cursor: pointer;
-    user-select: none;
+  padding-left: 35px;
+  cursor: pointer;
+  user-select: none;
 }
 section div label input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 section div label span.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 2px solid gray;
-    background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid gray;
+  background-color: white;
 }
 .container-radio-button span.checkmark:hover {
-    background-color: #ccc;
+  background-color: #ccc;
 }
 .container-radio-button input:checked ~ .checkmark {
-    border: 5px solid #2196F3;
+  border: 5px solid blue;
 }
 .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
+  content: "";
+  position: absolute;
+  display: none;
 }
 .container-radio-button input:checked ~ .checkmark:after {
-    display: block;
+  display: block;
+}
+main section div .piani-pagamento div > h3 {
+  font-size: 24px;
 }
 /* piani pagamento */
 main section div .piani-pagamento {
   width: calc((100% / 3) - 20px);
-  height: 600px;
+  height: 800px;
+}
+main section div .piani-pagamento div.container-info {
+  padding: 20px 30px 0;
+  border: 1px solid rgb(229, 229, 231);
+}
+main section div .piani-pagamento > div.flex.al-jus-center {
+  padding: 10px 0;
+  border: 1px solid rgb(229, 229, 231);
+}
+.user-icon::before {
+  content: "\f007";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  width: 10%;
+}
+.folder-icon::before {
+  content: "\f07b";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  width: 10%;
+  vertical-align: top;
+}
+.share-icon::before {
+  content: "\f1e0";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  width: 10%;
+  vertical-align: top;
+}
+.check-icon::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  width: 10%;
+  vertical-align: top;
+  color: blue;
+}
+.users-icon::before {
+  content: "\f0c0";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  width: 10%;
+  vertical-align: top;
+}
+.flad-icon::before {
+  content: "\f1ad";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  width: 10%;
+  vertical-align: top;
+}
+main section div .piani-pagamento a.button-rectangular {
+  text-align: center;
+  padding: 7px 0;
+}
+main section div .piani-pagamento a.link {
+  text-decoration: underline;
+  display: inline;
+}
+main section div .piani-pagamento hr {
+ width: 15%;
+ border-color: rgb(152, 150, 158);
 }
 
 /* FOOTER */
 footer {
-    width: 100%;
-    height: 200px;
-    background-color: lightslategray;
+  width: 100%;
+  height: 200px;
+  background-color: lightslategray;
 }
 
 section.sect-footer {
-    width: 80%;
-    height: 80px;
-    background-color: peachpuff;
+  width: 80%;
+  height: 80px;
+  background-color: peachpuff;
 }
