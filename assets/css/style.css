@@ -291,6 +291,32 @@ main section #galleria-centrale hr {
   max-width: 20%;
 }
 
+/* SEZIONE - inizia la tua prova */
+main section#prova {
+  background-color: rgb(180, 208, 231);
+  width: 100%;
+  height: 300px;
+  padding: 120px 0;
+}
+main section#prova div#container-prova {
+  margin: 0 auto;
+  width: 60%;
+}
+main section#prova div h2 {
+  padding-right: 150px;
+  color: rgb(97, 8, 43);
+}
+main section#prova div a {
+  text-align: center;
+  border: 1px solid black;
+  height: 40px;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  color: black;
+}
+
+
 /* FOOTER */
 footer {
   width: 100%;
