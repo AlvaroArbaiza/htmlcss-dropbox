@@ -231,6 +231,14 @@ main section div.card h3 {
   margin-bottom: 30px;
 }
 
+/* SECTION - scopri di più*/
+main section#scopri-dp h2 {
+  width: 70%;
+  margin-bottom: 50px;
+}
+main section#scopri-dp a {
+  text-decoration: underline;
+}
 
 /* FOOTER */
 footer {
