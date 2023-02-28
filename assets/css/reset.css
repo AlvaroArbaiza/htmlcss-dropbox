@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
 }
 
 /* Centratura Pagina */
@@ -95,4 +95,10 @@ img {
 
 .w-90 {
     width: 90%;
+}
+.w-70 {
+    width: 70%;
+}
+.w-30 {
+    width: 30%;
 }
