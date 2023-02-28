@@ -35,7 +35,6 @@ main {
   background-color: aquamarine;
 }
 section {
-  height: 1200px;
   background-color: white;
 }
 
@@ -238,6 +237,58 @@ main section#scopri-dp h2 {
 }
 main section#scopri-dp a {
   text-decoration: underline;
+}
+
+/* SECTION - galleria*/
+main section div.galleria {
+  flex-basis: calc(100% / 3);
+}
+main section .galleria div.logo-galleria {
+  flex-basis: calc(100% / 2);
+  aspect-ratio: 1/1;
+}
+main section .galleria .logo-galleria svg {
+  max-width: 60%;
+}
+/* galleria sx */
+main section .galleria div svg{
+  fill: white;
+}
+main section #galleria-sx #designit {
+  background-color: rgb(162, 211, 155);
+  border: 14px solid rgb(209, 233, 205);
+}
+main section #galleria-sx #asu {
+  background-color: rgb(97, 8, 43);
+}
+main section #galleria-sx #uf {
+  background-color: rgb(0, 147, 206);
+}
+main section #galleria-sx #topps {
+  background-color: rgb(255, 28, 28);
+}
+/* galleria dx */
+main section #galleria-dx #wb-relief {
+  background-color: rgb(213, 0, 31);
+}
+main section #galleria-dx #hearst {
+  background-color: rgb(180, 208, 231);
+}
+main section #galleria-dx #l-planet {
+  background-color: rgb(13, 36, 129);
+}
+main section #galleria-dx #c-channel {
+  background-color: rgb(255, 216, 48);
+}
+/* galleria centrale */
+main section #galleria-centrale {
+  padding: 40px;
+}
+main section #galleria-centrale svg {
+  max-width: 50%;
+}
+main section #galleria-centrale hr {
+  max-width: 20%;
 }
 
 /* FOOTER */
