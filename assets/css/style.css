@@ -110,7 +110,7 @@ section div label span.checkmark {
 }
 
 /* piani pagamento */
-main section div .piani-pagamento div > h3 {
+main section h3 {
   font-size: 24px;
 }
 main section div .piani-pagamento {
@@ -123,7 +123,7 @@ main section div.container-info {
   border: 1px solid rgb(229, 229, 231);
 }
 main section div.container-info-enterprise {
-  height: 400px;
+  height: 180px;
   padding: 30px 40px 0;
   border: 1px solid rgb(229, 229, 231);
 }
@@ -194,8 +194,27 @@ main section div .piani-pagamento a.link {
 }
 /* Hr */
 main section div .piani-pagamento hr {
- width: 15%;
- border-color: rgb(152, 150, 158);
+  width: 15%;
+  border-color: rgb(152, 150, 158);
+}
+
+/* SECTION - entra in contatto */
+main section div#img-partners{
+  flex-basis: calc(60% - 10px);
+}
+main section div#text-partners{
+  flex-basis: calc(40% - 10px);
+  padding: 50px 30px 0;
+}
+main section #text-partners p {
+  margin-top: 10px;
+}
+main section #text-partners a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  color: black;
 }
 
 /* FOOTER */
