@@ -1,3 +1,8 @@
+/* BODY */
+h3 {
+  font-size: 24px;
+}
+
 /* HEADER */
 header {
   width: 100%;
@@ -32,10 +37,6 @@ header, p {
 /* MAIN */
 main {
   width: 100%;
-  background-color: aquamarine;
-}
-section {
-  background-color: white;
 }
 
 /* SECTION - jumbotron */
@@ -55,35 +56,28 @@ main #jumbotron div h1.jumb-center {
   font-size: 60px;
   font-weight: 1000;
 }
-main section div#col-30 {
-  flex-basis: 30%;
-}
-main section div#col-70 {
-  flex-basis: 70%;
-}
-main section div#col-30 a span.button-bg-blue {
+main section div a span.button-bg-blue {
   padding: 7px 14px;
 }
-main section div#col-30 a#arrow-down {
+main section div a#arrow-down {
   margin-top: 40px;
   font-size: 40px;
   color: black;
 }
 
 /* SECTION - piano business */
-
 /* radio buttons */
-section div label.container-radio-button {
+main section div label.container-radio-button {
   padding-left: 35px;
   cursor: pointer;
   user-select: none;
 }
-section div label input {
+main section div label input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
-section div label span.checkmark {
+main section div label span.checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -93,25 +87,22 @@ section div label span.checkmark {
   border: 2px solid gray;
   background-color: white;
 }
-.container-radio-button span.checkmark:hover {
+main section div label.container-radio-button span.checkmark:hover {
   background-color: #ccc;
 }
-.container-radio-button input:checked ~ .checkmark {
+main section div label.container-radio-button input:checked ~ .checkmark {
   border: 5px solid blue;
 }
-.checkmark:after {
+main section div label.container-radio-button span.checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-.container-radio-button input:checked ~ .checkmark:after {
+main section div label.container-radio-button input:checked ~ .checkmark:after {
   display: block;
 }
 
 /* piani pagamento */
-main section h3 {
-  font-size: 24px;
-}
 main section div .piani-pagamento {
   width: calc((100% / 3) - 30px);
   height: 800px;
@@ -171,11 +162,11 @@ main section div .piani-pagamento hr {
 
 /* SECTION - entra in contatto */
 main section div#img-partners{
-  flex-basis: calc(60% - 10px);
+  flex-basis: 60%;
 }
 main section div#text-partners{
-  flex-basis: calc(40% - 10px);
-  padding: 50px 80px 0 20px;
+  flex-basis: 40%;
+  padding: 50px 50px 0 40px;
 }
 main section #text-partners p {
   margin-top: 10px;
@@ -213,19 +204,18 @@ main section#scopri-dp a {
 
 /* SECTION - galleria*/
 main section div.galleria {
-  flex-basis: calc(100% / 3);
+  flex-basis: calc(100vw / 3);
+  height: calc(100vw / 3);
 }
 main section .galleria div.logo-galleria {
   flex-basis: calc(100% / 2);
-  aspect-ratio: 1/1;
+  height: calc(100% / 2);
 }
-main section .galleria .logo-galleria svg {
+main section .galleria .logo-galleria > svg {
   max-width: 60%;
-}
-/* galleria sx */
-main section .galleria div svg{
   fill: white;
 }
+/* galleria sx */
 main section #galleria-sx #designit {
   background-color: rgb(162, 211, 155);
   border: 14px solid rgb(209, 233, 205);
@@ -255,6 +245,7 @@ main section #galleria-dx #c-channel {
 /* galleria centrale */
 main section #galleria-centrale {
   padding: 40px;
+  overflow: auto;
 }
 main section #galleria-centrale svg {
   max-width: 50%;
@@ -303,25 +294,43 @@ main section#d-frequenti > hr {
 main section#d-frequenti div.domanda {
   padding: 30px 0;
 }
+main section#d-frequenti div.risposta {
+  padding: 0 100px 30px 0;
+}
+/* hover */
 main section#d-frequenti div.domanda:hover + .risposta,
 main section#d-frequenti div.domanda:hover .fa-chevron-up {
   display: block;
 }main section#d-frequenti div.domanda:hover .fa-chevron-down {
   display: none;
 }
-/* main section#d-frequenti div.risposta p {
-  
-} */
 
 /* FOOTER */
 footer {
   width: 100%;
-  height: 200px;
-  background-color: lightslategray;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
-
-section.sect-footer {
-  width: 80%;
-  height: 80px;
-  background-color: peachpuff;
+footer div.container-footer{
+  width: 70%;
+  margin: 0 auto;
+  padding: 70px 0 40px;
+}
+footer section div.list-footer {
+  flex-basis: calc(100% / 5);
+}
+footer .container-footer section .list-footer > h3 {
+  margin-bottom: 30px;
+}
+footer .container-footer hr {
+  width: 10%;
+  margin: 70px 0 40px ;
+}
+footer .container-footer section .list-footer ul li > a {
+  color: white;
+}
+footer .container-footer section select {
+  background-color: black;
+  border: none;
+  color: white;
 }
