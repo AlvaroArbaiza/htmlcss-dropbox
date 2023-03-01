@@ -113,12 +113,12 @@ main section h3 {
   font-size: 24px;
 }
 main section div .piani-pagamento {
-  width: calc((100% / 3) - 20px);
+  width: calc((100% / 3) - 30px);
   height: 800px;
 }
 main section div.container-info {
   height: 700px;
-  padding: 20px 40px 0;
+  padding: 30px 30px 0;
   border: 1px solid rgb(229, 229, 231);
 }
 main section div.container-info-enterprise {
@@ -128,7 +128,9 @@ main section div.container-info-enterprise {
 }
 main section div.head-card-table {
   padding: 10px 0;
-  border: 1px solid rgb(229, 229, 231);
+  border-top: 1px solid rgb(229, 229, 231);
+  border-left: 1px solid rgb(229, 229, 231);
+  border-right: 1px solid rgb(229, 229, 231);
 }
 main section div.text-enterprise {
   width: calc((100% / 3) + (100% / 3) - 30px);
@@ -138,25 +140,9 @@ main section div a.cta-button-enterprise {
   margin-left: 40px;
 }
 /* Icons */
-.user-icon::before {
-  content: "\f007";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  width: 10%;
-}
-.folder-icon::before {
-  content: "\f07b";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  width: 10%;
+main section div.head-card-table > i {
   vertical-align: top;
-}
-.share-icon::before {
-  content: "\f1e0";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  width: 10%;
-  vertical-align: top;
+  margin-right: 3px;
 }
 .check-icon::before {
   content: "\f00c";
@@ -165,20 +151,6 @@ main section div a.cta-button-enterprise {
   width: 10%;
   vertical-align: top;
   color: blue;
-}
-.users-icon::before {
-  content: "\f0c0";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  width: 10%;
-  vertical-align: top;
-}
-.flad-icon::before {
-  content: "\f1ad";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  width: 10%;
-  vertical-align: top;
 }
 /* Blue buttons */
 main section div a.button-rectangular {
@@ -203,7 +175,7 @@ main section div#img-partners{
 }
 main section div#text-partners{
   flex-basis: calc(40% - 10px);
-  padding: 50px 30px 0;
+  padding: 50px 80px 0 20px;
 }
 main section #text-partners p {
   margin-top: 10px;
@@ -309,13 +281,37 @@ main section#prova div h2 {
 main section#prova div a {
   text-align: center;
   border: 1px solid black;
-  height: 40px;
-  padding: 10px;
+  padding: 10px 40PX;
   background-color: white;
   border: none;
   color: black;
 }
 
+/* SEZIONE - domande frequenti */
+main section#d-frequenti h2 {
+  margin-bottom: 40px;
+}
+main section#d-frequenti .domanda > .arrows {
+  margin-right: 80px;
+}
+main section#d-frequenti .domanda .arrows i.fa-chevron-up {
+  display: none;
+}
+main section#d-frequenti > hr {
+  width: 95%;
+}
+main section#d-frequenti div.domanda {
+  padding: 30px 0;
+}
+main section#d-frequenti div.domanda:hover + .risposta,
+main section#d-frequenti div.domanda:hover .fa-chevron-up {
+  display: block;
+}main section#d-frequenti div.domanda:hover .fa-chevron-down {
+  display: none;
+}
+/* main section#d-frequenti div.risposta p {
+  
+} */
 
 /* FOOTER */
 footer {

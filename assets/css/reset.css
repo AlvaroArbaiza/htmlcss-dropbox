@@ -96,6 +96,9 @@ img {
 .inline-block {
     display: inline-block;
 }
+.display-none {
+    display: none;
+}
 
 /* Width */
 .w-90 {
