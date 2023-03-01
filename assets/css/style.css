@@ -13,6 +13,7 @@ header {
   left: 0;
   z-index: 9999;
   background-color: white;
+  border-bottom: 1px solid rgb(229, 229, 231);
 }
 header div a {
   color: rgb(66, 66, 66);
@@ -157,7 +158,8 @@ main section div .piani-pagamento a.link {
 /* Hr */
 main section div .piani-pagamento hr {
   width: 15%;
-  border-color: rgb(152, 150, 158);
+  border: none;
+  border-bottom: 1px solid lightgrey;
 }
 
 /* SECTION - entra in contatto */
@@ -177,6 +179,9 @@ main section #text-partners a {
   padding: 10px;
   border: 1px solid black;
   color: black;
+}
+main section #text-partners a:hover {
+  color: rgba(0, 0, 0, 0.445);
 }
 
 /* SECTION - esegui operazioni */
@@ -277,6 +282,9 @@ main section#prova div a {
   border: none;
   color: black;
 }
+main section#prova div a:hover {
+  color: rgba(0, 0, 0, 0.445);
+}
 
 /* SEZIONE - domande frequenti */
 main section#d-frequenti h2 {
@@ -295,7 +303,7 @@ main section#d-frequenti div.domanda {
   padding: 30px 0;
 }
 main section#d-frequenti div.risposta {
-  padding: 0 100px 30px 0;
+  padding: 0 50px 30px 0;
 }
 /* hover */
 main section#d-frequenti div.domanda:hover + .risposta,

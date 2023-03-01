@@ -74,6 +74,9 @@ a {
     border: none;
     color: white;
 }
+.button-bg-blue:hover {
+    background-color: rgba(0, 98, 255, 0.701);
+}
 
 /* Immagini */
 img {
